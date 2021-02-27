@@ -138,7 +138,7 @@ int main(void) {
 		if (ADCMode == 1)
 		{
 			ADCOutputConverted = ((((ADCChannel[1].Data * 3.3) / 4096) - 0.76)
-					/ 2.5) + 25;
+					/ (2.5/1000)) + 25;
 		}
 
 	}
